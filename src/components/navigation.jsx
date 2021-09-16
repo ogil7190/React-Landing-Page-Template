@@ -15,11 +15,17 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
           </button>
-          <a className='navbar-brand page-scroll' href='#page-top'>
-            React Landing Page
+          <a className='navbar-brand page-scroll' href='/#page-top'>
+            Desi Charge
           </a>{' '}
+          <img
+            src={'img/logo.png'}
+            className='img-logo'
+            alt={'logo'}
+          />
         </div>
 
+    { props.actions !== false &&
         <div
           className='collapse navbar-collapse'
           id='bs-example-navbar-collapse-1'
@@ -41,20 +47,25 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
+              <a href='#pricing' className='page-scroll'>
+                Pricing
+              </a>
+            </li>
+            {/* <li>
               <a href='#portfolio' className='page-scroll'>
                 Gallery
               </a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a href='#testimonials' className='page-scroll'>
                 Testimonials
               </a>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <a href='#team' className='page-scroll'>
                 Team
               </a>
-            </li>
+            </li> */}
             <li>
               <a href='#contact' className='page-scroll'>
                 Contact
@@ -62,6 +73,7 @@ export const Navigation = (props) => {
             </li>
           </ul>
         </div>
+      }
       </div>
     </nav>
   )

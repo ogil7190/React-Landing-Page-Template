@@ -313,6 +313,11 @@ header .intro-text {
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   color: #fff;
 }
+#pricing {
+  padding: 100px 0;
+  background: #fff;
+  /* color: #fff; */
+}
 #services .service-desc {
   margin: 10px 10px 20px;
 }
@@ -597,6 +602,68 @@ label {
 }
 #footer a:hover {
   border-bottom: 2px solid #608dfd;
+}
+
+.img-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.policy {
+  padding: 20px;
+  padding-top: 0;
+  margin-top: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.privacy > [data-custom-class="body"],
+[data-custom-class="body"] * {
+  background: transparent !important;
+}
+[data-custom-class="title"],
+[data-custom-class="title"] * {
+  font-family: Arial !important;
+  font-size: 26px !important;
+  color: #000000 !important;
+}
+[data-custom-class="subtitle"],
+[data-custom-class="subtitle"] * {
+  font-family: Arial !important;
+  color: #595959 !important;
+  font-size: 14px !important;
+}
+[data-custom-class="heading_1"],
+[data-custom-class="heading_1"] * {
+  font-family: Arial !important;
+  font-size: 19px !important;
+  color: #000000 !important;
+}
+[data-custom-class="heading_2"],
+[data-custom-class="heading_2"] * {
+  font-family: Arial !important;
+  font-size: 17px !important;
+  color: #000000 !important;
+}
+[data-custom-class="body_text"],
+[data-custom-class="body_text"] * {
+  color: #595959 !important;
+  font-size: 14px !important;
+  font-family: Arial !important;
+}
+[data-custom-class="link"],
+[data-custom-class="link"] * {
+  color: #3030f1 !important;
+  font-size: 14px !important;
+  font-family: Arial !important;
+  word-break: break-word !important;
 }
 
 @media (max-width: 768px) {

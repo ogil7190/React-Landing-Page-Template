@@ -4,9 +4,9 @@ import { Header } from "./components/header";
 import { Features } from "./components/features";
 import { About } from "./components/about";
 import { Services } from "./components/services";
-import { Gallery } from "./components/gallery";
-import { Testimonials } from "./components/testimonials";
-import { Team } from "./components/Team";
+import { Pricing } from "./components/pricing";
+import { Privacy } from "./components/privacy";
+import { Refund } from "./components/refund";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
@@ -23,6 +23,26 @@ const App = () => {
     setLandingPageData(JsonData);
   }, []);
 
+  if (window.location.pathname === "/privacy-policy") {
+    return(
+      <div>
+        <Navigation actions={false} />
+        <Privacy />
+        <Contact data={landingPageData.Contact} />
+      </div>
+    )
+  };
+  
+  if (window.location.pathname === "/refund-policy") {
+    return(
+      <div>
+        <Navigation actions={false} />
+        <Refund />
+        <Contact data={landingPageData.Contact} />
+      </div>
+    )
+  };
+
   return (
     <div>
       <Navigation />
@@ -30,9 +50,10 @@ const App = () => {
       <Features data={landingPageData.Features} />
       <About data={landingPageData.About} />
       <Services data={landingPageData.Services} />
-      <Gallery data={landingPageData.Gallery}/>
-      <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
+      <Pricing />
+      {/* <Gallery data={landingPageData.Gallery}/> */}
+      {/* <Testimonials data={landingPageData.Testimonials} /> */}
+      {/* <Team data={landingPageData.Team} /> */}
       <Contact data={landingPageData.Contact} />
     </div>
   );
