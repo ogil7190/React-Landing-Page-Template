@@ -160,10 +160,14 @@ export const Contact = (props) => {
             </a>
             <br/>
             <br/>
+            <a href="/terms" rel="nofollow">
+              Terms &amp; Conditions
+            </a>
+            {' | '}
             <a href="/privacy-policy" rel="nofollow">
               Privacy Policy
             </a>
-            {'  '}
+            {' | '}
             <a href="/refund-policy" rel="nofollow">
               Refund Policy
             </a>

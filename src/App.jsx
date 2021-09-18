@@ -7,6 +7,7 @@ import { Services } from "./components/services";
 import { Pricing } from "./components/pricing";
 import { Privacy } from "./components/privacy";
 import { Refund } from "./components/refund";
+import { TermsAndConditions } from "./components/terms";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
@@ -24,24 +25,34 @@ const App = () => {
   }, []);
 
   if (window.location.pathname === "/privacy-policy") {
-    return(
+    return (
       <div>
         <Navigation actions={false} />
         <Privacy />
         <Contact data={landingPageData.Contact} />
       </div>
-    )
-  };
-  
+    );
+  }
+
   if (window.location.pathname === "/refund-policy") {
-    return(
+    return (
       <div>
         <Navigation actions={false} />
         <Refund />
         <Contact data={landingPageData.Contact} />
       </div>
-    )
-  };
+    );
+  }
+
+  if (window.location.pathname === "/terms") {
+    return (
+      <div>
+        <Navigation actions={false} />
+        <TermsAndConditions />
+        <Contact data={landingPageData.Contact} />
+      </div>
+    );
+  }
 
   return (
     <div>
